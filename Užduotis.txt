@@ -1,0 +1,15 @@
+Sukurti knygø katalogà, kuriame bûtø 12 knygø ir 3 kategorijos.
+Knygà turi turëti ðias savybes:
+ISBN
+Leidimo metai
+Pavadinimas
+Puslapiø skaièius
+Jeigu knygà iðleista ðiais metais ðalia jos pavadinimo turime iðvesti (nauja knyga)
+Tai pat turime iðvesti bendrà knygø skaièiø kategorijoje
+Pvz:
+Groþinë literatûra (10 knygø)
+:
+ISBN : GR1236K
+Leidimo metai: 2018 (nauja knyga)
+Pavadinimas: Mano mintys debesyse
+Puslapiø skaièius: 300
