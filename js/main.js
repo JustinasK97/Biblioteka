@@ -5,7 +5,7 @@ let knygos =
 			'Grožinė':[{
 
 				isbn: "52648",
-				leidimoMetai: "2000",
+				leidimoMetai: "2018",
 				pavadinimas: "Pasakų šaly",
 				puslapiuSkaicius: "236"
 		},
@@ -87,10 +87,23 @@ let knygos =
 	}
 ]
 for(kategorija of knygos){
-	for(duomenys in kategorija)
+	for(duomenys in kategorija){
 			console.log("Kategorija - " + duomenys)
 
-	for(apie in duomenys)
-		for(info in kategorija[duomenys][apie])
-			console.log(info + ' : ' + kategorija[duomenys][apie][info])
+	for(apie in duomenys){
+		for(info in kategorija[duomenys][apie]){
+
+		if(info != 'leidimoMetai'){
+
+			console.log(info+ ' : ' + kategorija[duomenys][apie][info])
+		}
+
+		if(info == 'leidimoMetai'){
+			let condition = kategorija[duomenys][apie][info] == '2019' ? ' (Nauja knyga)' : ' (...)'
+
+				console.log(info + ' : ' + kategorija[duomenys][apie][info]+condition)
+}
+}
+}
+}				
 }
